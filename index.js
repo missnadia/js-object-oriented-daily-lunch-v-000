@@ -28,7 +28,8 @@ class Neighborhood {
     const allMeals = this.customers().map(customer => {
       customer.meals();
     });
-    return .filter((allMeals, i, a) => i === a.indexOf(allMeals))
+    const uniqueMeals = [...new Set([allMeals])];
+    return uniqueMeals;
   }
 }
 
