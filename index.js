@@ -28,7 +28,7 @@ class Neighborhood {
     const allMeals = this.customers().map(customer => {
       customer.meals();
     });
-    const uniqueMeals = allMeals.join(', ');
+    const uniqueMeals = [].concat.apply([], allMeals);
     return [...new Set(uniqueMeals)];
   }
 }
