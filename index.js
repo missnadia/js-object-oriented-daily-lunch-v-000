@@ -40,6 +40,19 @@ class Meal {
     this.title = title;
     this.price = price;
     store.meals.push(this);
+  }
+
+  deliveries() {
+    
+  }
+
+  customers() {
+    
+  }
+
+  byPrice() {
+    
+  }
 }
 
 class Delivery {
