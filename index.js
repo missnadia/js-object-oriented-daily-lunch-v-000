@@ -45,9 +45,7 @@ class Customer {
   }
 
   meals() {
-    return store.meals.find(meal => {
-      return meal.id === this.mealId;
-    });
+
   }
 
   totalSpent() {
