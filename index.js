@@ -45,8 +45,8 @@ class Customer {
   }
 
   meals() {
-    return this.meals().map(meal => {
-      return meal.customer();
+    return this.deliveries().map(delivery => {
+      return delivery.meal();
     });
   }
 
