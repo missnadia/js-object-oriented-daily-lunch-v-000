@@ -98,6 +98,8 @@ class Delivery {
   }
 
   neighborhood() {
-
+    return store.neighborhoods.find(neighborhood => {
+      return neighborhood.id === this.neighborhoodId;
+    });
   }
 }
