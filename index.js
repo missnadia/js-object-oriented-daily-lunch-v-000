@@ -29,7 +29,7 @@ class Neighborhood {
       return self.indexOf(value) === index;
     }
     const allMeals = this.customers().map(customer => customer.meals());
-    const uniqueMeals = allMeals.filter(onlyUnique);
+    const uniqueMeals = allMeals.filter(unique);
     return uniqueMeals;
   }
 }
