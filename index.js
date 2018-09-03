@@ -25,11 +25,8 @@ class Neighborhood {
   }
 
   meals() {
-    const unique = (value, index, self) => {
-      return self.indexOf(value) === index;
-    }
     const allMeals = this.customers().map(customer => customer.meals());
-    const uniqueMeals = allMeals.filter(unique);
+    const uniqueMeals = [...new Set(allMeals)];
     return uniqueMeals;
   }
 }
