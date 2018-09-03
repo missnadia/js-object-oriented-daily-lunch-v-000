@@ -31,14 +31,20 @@ class Neighborhood {
 class Customer {
   constructor() {
     this.id = ++customerId;
+    store.customers.push(this);
 }
 
 class Meal {
   constructor() {
     this.id = ++mealId;
+    store.meals.push(this);
 }
 
 class Delivery {
-  constructor() {
+  constructor(meal, neighborhood, customer) {
     this.id = ++deliveryId;
+    this.mealId = meal.id;
+    this.neighborhoodId = neighborhood.id;
+    this.customerId = customer.id;
+    store.deliveries.push(this);
 }
