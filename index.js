@@ -15,12 +15,14 @@ class Neighborhood {
 
   deliveries() {
     return store.deliveries.filter(delivery => {
-      return delivery.neighborhoodId === this.id;
     });
+    return delivery.neighborhoodId === this.id;
   }
 
   customers() {
-
+    return this.deliveries().map(delivery => {
+      return delivery.customers();
+    });
   }
 
   meals() {
