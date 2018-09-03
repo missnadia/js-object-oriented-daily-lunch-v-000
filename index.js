@@ -45,7 +45,9 @@ class Customer {
   }
 
   meals() {
-
+    return this.meals().map(meal => {
+      return meal.customer();
+    });
   }
 
   totalSpent() {
