@@ -29,7 +29,7 @@ class Neighborhood {
       customer.meals();
     });
     const uniqueMeals = [...new Set([allMeals])];
-    return uniqueMeals;
+    return .filter((allMeals, i, a) => i === a.indexOf(allMeals))
   }
 }
 
