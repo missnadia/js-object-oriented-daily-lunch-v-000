@@ -35,6 +35,18 @@ class Customer {
     this.neighborhoodId = neighborhood.id;
     store.customers.push(this);
   }
+
+  deliveries() {
+
+  }
+
+  meals() {
+
+  }
+
+  totalSpent() {
+
+  }
 }
 
 class Meal {
