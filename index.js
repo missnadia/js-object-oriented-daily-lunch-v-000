@@ -24,13 +24,13 @@ class Neighborhood {
     });
   }
 
-  onlyUnique(meals, index, self) {
-    return self.indexOf(meals) === index;
+  onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
   }
 
   meals() {
-    let allMeals = this.customers().map(customer => customer.meals());
-    let uniqueMeals = allMeals.filter(onlyUnique);
+    const allMeals = this.customers().map(customer => customer.meals());
+    const uniqueMeals = allMeals.filter(onlyUnique);
     return uniqueMeals;
   }
 }
