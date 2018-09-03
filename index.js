@@ -25,6 +25,7 @@ class Neighborhood {
   }
 
   meals() {
+    let allMeals = this.customers().map(customer => customer.meals());
 
   }
 }
