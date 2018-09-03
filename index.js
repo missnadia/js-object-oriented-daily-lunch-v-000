@@ -15,4 +15,12 @@ class Neighborhood {
       return delivery.neighborhoodId === this.id;
     });
   }
+
+  customers() {
+
+  }
+
+  meals() {
+
+  }
 }
