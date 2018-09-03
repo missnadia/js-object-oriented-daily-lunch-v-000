@@ -24,9 +24,14 @@ class Neighborhood {
     });
   }
 
+  onlyUnique(meals, index, self) {
+    return self.indexOf(meals) === index;
+  }
+
   meals() {
     let allMeals = this.customers().map(customer => customer.meals());
-
+    let uniqueMeals = allMeals.filter(onlyUnique);
+    return uniqueMeals;
   }
 }
 
